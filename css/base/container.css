@@ -1,9 +1,0 @@
-
-.container {
-  max-width: calc(var(--flexWidth) + var(--flexPadding) * 2);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--flexPadding);
-  padding-right: var(--flexPadding);
-  width: 100%;
-}
