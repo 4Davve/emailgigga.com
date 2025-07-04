@@ -1,14 +1,14 @@
-@import url(./font/Inter-Regular.woff2);
-@import url(./font/Inter-SemiBold.woff2);
+@import url(font/Inter-Regular.woff2);
+@import url(font/Inter-SemiBold.woff2);
 
-@import "/css/base/reset.css";
-@import "/css/base/typograpgy.css";
-@import "/css/base/variables.css";
-@import "/css/base/container.css";
-@import "/css/base/container--header.css";
+@import "css/base/reset.css";
+@import "css/base/typograpgy.css";
+@import "css/base/variables.css";
+@import "css/base/container.css";
+@import "css/base/container--header.css";
 
-@import "/css/layout/header.css";
-@import "/css/layout/footer.css";
+@import "css/layout/header.css";
+@import "css/layout/footer.css";
 
-@import "/css/section/hero.css";
-@import "/css/section/benefit.css";
+@import "css/section/hero.css";
+@import "css/section/benefit.css";
