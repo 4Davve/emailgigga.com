@@ -1,0 +1,113 @@
+.footer {
+  position: relative;
+  background-color: var(--bg-dark);
+  padding: calc(var(--padding-Y) * 15) calc(var(--padding-X) * 20) 0;
+  box-shadow: 0 -8px 16px rgba(43, 56, 48, 0.5);
+  z-index: 1;
+}
+
+.footer__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px 125px;
+}
+
+.footer__logo{
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: var(--font-medium);
+}
+
+.footer__logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: calc(var(--gapPadding));
+}
+
+.footer__logo-svg {
+  color: var(--logo-color-unhover);
+  cursor: pointer;
+}
+
+.footer__logo--left,
+.footer__logo--right {
+  transition: color 0.3s ease, transform 0.3s ease;
+  transform-origin: bottom center;
+}
+
+.footer__logo-svg:hover .footer__logo--left {
+  color: var(--logo-color-hover);
+  transform: translate(-5px, -5px) scale(1.05);
+}
+
+.footer__logo-svg:hover .footer__logo--right {
+  color: var(--logo-color-hover);
+  transform: translate(5px, 5px) scale(1.05);
+}
+
+.footer__logo-text {
+  color: var(--color-link-unhover);
+  transition: color 0.5s ease;
+}
+
+.footer__logo-text:hover {
+  color: var(--color-link-hover);
+}
+
+.footer__menu {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-size: var(--font-regular);
+  font-weight: 400;
+  gap: calc(var(--gapPadding) * 15);
+}
+
+.footer__menu-link {
+  display: inline-block;
+  color: var(--color-link-hover);
+  text-decoration: none;
+  transition: color 0.5s ease;
+  cursor: pointer;
+}
+
+.footer__menu-link:hover {
+  color: var(--color-link-nav-hover);
+}
+
+.footer__social {
+  display: flex;
+  justify-content: flex-end;
+  gap: calc(var(--gapPadding) * 3);
+  padding: 10px 0;
+}
+
+.footer__social-icon {
+  color: var(--color-link-hover);
+  width: 25px;
+  height: 25px;
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.footer__social-icon:hover {
+  transform: scale(1.1);
+  color: var(--color-link-nav-hover);
+}
+
+.footer__divider {
+  border: none;
+  max-width: 1500px;
+  height: 2px;
+  background-color: #4B4B4B;
+  margin: 0 auto;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-around;
+  color: var(--color-link-hover);
+  font-size: var(--font-smail);
+  padding: 35px 0;
+}
