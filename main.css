@@ -317,7 +317,7 @@ body {
 .hero__blur {
   display: flex;
   justify-content: center;
-  background-image: url(/img/hero/layer-blur.png);
+  background-image: url(img/hero/layer-blur.png);
   background-size: contain;       
   background-position: center;  
   background-repeat: no-repeat; 
