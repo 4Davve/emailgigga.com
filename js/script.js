@@ -1,5 +1,3 @@
-// Image JS
-
 const image = document.querySelector('.hero__screen--img');
 
 let lastScrollY = window.scrollY;
@@ -26,11 +24,9 @@ const hideimage = new IntersectionObserver(
 
 hideimage.observe(image);
 
-// Brands carusel 
 
 const track = document.querySelector('.brands');
 
-// Клонируем элементы для бесконечной прокрутки
 const items = Array.from(track.children);
 items.forEach(item => {
   const clone = item.cloneNode(true);
@@ -43,11 +39,11 @@ const slowSpeed = 0.3;
 let speed = normalSpeed;
 
 track.addEventListener('mouseenter', () => {
-  speed = slowSpeed; // замедляем при наведении
+  speed = slowSpeed; 
 });
 
 track.addEventListener('mouseleave', () => {
-  speed = normalSpeed; // возвращаем нормальную скорость
+  speed = normalSpeed;
 });
 
 function animate() {
